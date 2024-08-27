@@ -16,3 +16,11 @@ body{
    padding: 3px;
    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
+
+.taskCard{
+    background-color:bisque;
+    color: black;
+    padding: 5px;
+    margin-top: 10px;
+    border: 2px solid yellowgreen;
+}
