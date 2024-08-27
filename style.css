@@ -1,0 +1,18 @@
+body{
+    font-family: sans-serif;
+    background-color: aquamarine;
+}
+
+#heading{
+    text-align: center;
+    border: 3px solid green;
+    padding: 2px;
+}
+
+#addTask{
+   background-color:blueviolet;
+   border-radius:7px;
+   color: whitesmoke;
+   padding: 3px;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
