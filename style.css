@@ -1,26 +1,98 @@
-body{
-    font-family: sans-serif;
-    background-color: aquamarine;
+/* Resetting padding, margin, and box-sizing for all elements */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
-#heading{
+/* Styling for the Jira Board container */
+.jiraBoard {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; /* Added gap for better spacing between columns */
+    margin-left: 10px;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font for a modern look */
+    background-color: #f0f8ff; /* Changed background color to a lighter shade */
+}
+
+/* Styling for column headers */
+h3 {
+    /* border: solid grey; */ /* Commented out the old border */
+    padding-bottom: 6px;
+    font-size: 1.5rem; /* Increased font size for better readability */
+    color: #4f4f4f; /* Set text color to a subtle grey */
+    border-bottom: 2px solid #ccc; /* Added bottom border for emphasis */
+}
+
+/* Styling for the heading section */
+#heading {
     text-align: center;
-    border: 3px solid green;
-    padding: 2px;
+    border: 3px solid #32a852; /* Changed border color to match theme */
+    padding: 10px; /* Increased padding for better spacing */
+    background-color: #ffffff; /* Added background color to make heading stand out */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
 }
 
-#addTask{
-   background-color:blueviolet;
-   border-radius:7px;
-   color: whitesmoke;
-   padding: 3px;
-   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+/* Styling for the Add New Task button */
+#addTask {
+    background-color: #6a5acd; /* Slightly adjusted the color to be more vibrant */
+    border-radius: 7px;
+    color: whitesmoke;
+    padding: 10px; /* Increased padding for a larger button */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Increased shadow for a more pronounced effect */
+    margin-left: 15px;
+    cursor: pointer; /* Added cursor pointer for better UX */
+    transition: background-color 0.3s ease; /* Added transition for hover effect */
 }
 
-.taskCard{
-    background-color:bisque;
+/* Hover effect for the Add New Task button */
+#addTask:hover {
+    background-color: #483d8b; /* Darker shade on hover */
+}
+
+/* Styling for individual task cards */
+.taskCard {
+    background-color: #ffebcd; /* Slightly adjusted the color for a softer look */
     color: black;
-    padding: 5px;
+    padding: 10px; /* Increased padding for a more comfortable text area */
     margin-top: 10px;
-    border: 2px solid yellowgreen;
+    border: 2px solid #9acd32; /* Changed border color for better contrast */
+    border-radius: 5px; /* Added border radius for rounded corners */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+    transition: transform 0.2s ease; /* Added transition for a hover effect */
+}
+
+/* Hover effect for task cards */
+.taskCard:hover {
+    transform: scale(1.02); /* Slightly enlarges the card on hover */
+}
+
+/* Styling for the columns */
+.column {
+    width: 30%;
+    border: 2px solid #dcdcdc; /* Updated border color to be more subtle */
+    margin-right: 5px;
+    min-height: 350px; /* Increased height for more content space */
+    text-align: center;
+    background-color: #ffe4e1; /* Adjusted background color to a soft pink */
+    padding: 10px; /* Increased padding for better content spacing */
+    border-radius: 10px; /* Added border radius for smoother edges */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+/* Added a media query for responsive design */
+@media (max-width: 768px) {
+    .jiraBoard {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+        align-items: center; /* Center columns on smaller screens */
+    }
+
+    .column {
+        width: 80%; /* Adjust column width on smaller screens */
+        margin-bottom: 20px; /* Add spacing between stacked columns */
+    }
 }
