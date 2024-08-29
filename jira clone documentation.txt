@@ -1,0 +1,71 @@
+JIRA Clone
+
+
+Overview
+JIRA Clone is a web-based task management tool inspired by Atlassian's JIRA. It provides a simple and interactive Kanban-style board for users to create, manage, and track tasks. With drag-and-drop functionality, users can easily move tasks across different stages: "Planned," "In-Progress," and "Completed." This tool is designed to streamline task management, offering a user-friendly experience with essential features for organizing tasks.
+
+Features
+Create Tasks: Users can create new tasks by clicking the "Add New Task" button. A new task card is generated in the "Planned" column with default text.
+Editable Task Cards: Task cards are fully editable, allowing users to input their specific task details directly on the board.
+Delete Empty Tasks: If a task card remains empty after editing, it is automatically removed from the board to maintain cleanliness.
+Drag-and-Drop Functionality: Tasks can be easily moved between the "Planned," "In-Progress," and "Completed" columns using drag-and-drop actions.
+Responsive UI: The layout of the board adjusts based on the screen size, making it suitable for both desktop and mobile devices.
+File Structure
+index.html: Contains the main HTML structure of the task board.
+style.css: Provides the styling for the board, columns, buttons, and task cards.
+script.js: Contains JavaScript logic for adding tasks, editing them, and enabling drag-and-drop functionality.
+Getting Started
+To set up and run the project locally, follow these steps:
+
+Clone the Repository
+
+bash
+Copy code
+git clone https://github.com/pintu95045/jira-clone.git
+Open the Project Open the project folder in your preferred code editor.
+
+Run the Application Open index.html in any web browser. The application will load with an empty board, ready for you to start adding tasks.
+
+Detailed Explanation of Code
+1. index.html
+The HTML file contains the basic structure of the task management board:
+
+A header with an editable title for customization.
+A button labeled "Add New Task" to create new task cards.
+Three main columns: Planned, In-Progress, and Completed for organizing tasks based on their status.
+2. style.css
+The CSS file provides styles for the various components of the application:
+
+Global Styles: Resets margins, padding, and box-sizing for consistency.
+Body Styles: Sets a linear gradient background and general font styles.
+Button Styles: Includes hover and active states for a better user experience.
+Task Card Styles: Styles the draggable task cards with appropriate colors, borders, and spacing.
+Column Styles: Defines the layout and appearance of the three main columns on the board.
+3. script.js
+The JavaScript file implements the core functionalities:
+
+Adding a New Task: When the "Add New Task" button is clicked, a new task card is created with default text and added to the "Planned" column.
+Editable Task Cards: Task cards are editable, and the default text is cleared when clicked.
+Removing Empty Task Cards: If a task card remains empty (i.e., no content is added after removing the default text), it is automatically removed from the board.
+Drag-and-Drop Functionality: Allows users to drag task cards from one column to another. The dragstart, dragend, dragover, dragenter, and drop events are used to manage this functionality.
+How to Use
+Adding Tasks:
+
+Click on the "Add New Task" button.
+A new task card appears in the "Planned" column. Click on it to edit the task details.
+Moving Tasks:
+
+Click and hold on a task card to drag it.
+Drop it in either the "In-Progress" or "Completed" column as per the task's status.
+Deleting Tasks:
+
+Leave the task card empty, and it will automatically be removed from the board when it loses focus.
+Future Enhancements
+Some potential features that could be added to improve the project:
+
+Persistent Storage: Save tasks to local storage or a database to retain them between sessions.
+User Authentication: Allow multiple users to manage their own tasks separately.
+Task Prioritization: Add features to prioritize tasks within the columns.
+Advanced Customization: Allow users to customize the board, such as adding more columns or changing colors.
+Conclusion
+JIRA Clone is a lightweight, easy-to-use task management tool that helps users stay organized with their tasks. It provides a simplified experience similar to JIRA, making it a practical and educational project for beginners and a foundation for building more advanced task management applications.

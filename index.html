@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
     <title>Jira Board</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div id="heading">
-        <!-- Main heading for the Jira Board -->
-        <h1 id="main_heading">!JIRA! Board!</h1>
-    </div>
+    <meta charset="UTF-8" />
+    <!-- Linking external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+  </head>
 
+  <body>
+    <!-- Main editable heading for the Jira Board -->
+    <div id="app"></div>
+    <br />
+    <br />
     <!-- Button to add a new task -->
-    <Button id="addTask">Add New Task</Button>
+    <button id="addTaskButton">Add New Task</button>
+    <br />
+    <br />
 
-    <!-- Container for the Jira Board columns -->
-    <div class="jiraBoard">
-        <!-- Column for planned tasks -->
-        <div id="planned" class="column"><h3>Planned</h3></div>
-        <!-- Column for in-progress tasks -->
-        <div id="inprogress" class="column"><h3>In-Progress</h3></div>
-        <!-- Column for completed tasks -->
-        <div id="completed" class="column"><h3>Completed</h3></div>
+    <!-- Main container for the Jira board columns -->
+    <div class="jira">
+      <!-- Planned tasks column -->
+      <div id="plannedColumn" class="column">
+        <h3>Planned</h3>
+      </div>
+      <!-- In-progress tasks column -->
+      <div id="inProgressColumn" class="column">
+        <h3>In-Progress</h3>
+      </div>
+      <!-- Completed tasks column -->
+      <div id="completedColumn" class="column">
+        <h3>Completed</h3>
+      </div>
     </div>
-    
-    <!-- Linking the JavaScript file -->
-    <script src="./script.js"></script>
-</body>
+
+    <!-- Linking external JavaScript file for functionality -->
+    <script src="./script.js" type="module"></script>
+  </body>
 </html>
